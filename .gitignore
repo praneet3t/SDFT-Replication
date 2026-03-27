@@ -1,0 +1,26 @@
+.vscode/
+__pycache__/
+*.pyc
+
+wandb/
+results/
+bsub_outputs/
+.hyperparameter_search_scripts_main/
+# 1. Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# 3. Ignore base model weights (where you stored local_qwen_7b)
+replicate/
+
+# 4. Ignore all training outputs and checkpoints (Heavy Weights)
+results_*/
+checkpoint-*/
+
+# 5. Global ignore for heavy model file extensions just to be safe
+*.safetensors
+*.bin
+*.pt
+*.pth
+
